@@ -1,0 +1,7 @@
+---
+ - hosts: localhost
+   roles: 
+   - yatesr.timezone
+  
+   vars:
+    timezone: America/New_York
