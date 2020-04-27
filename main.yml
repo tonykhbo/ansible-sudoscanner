@@ -1,5 +1,5 @@
 ---
- - hosts: localhost
+ - hosts: all
    roles: 
    - ahuffman.scan_sudoers
 
