@@ -4,8 +4,8 @@
     ansible_host: "{{ vm_ip }}"
    vars_files:
    - vars.yaml
-   gather_facts: True
-   #roles: 
-   #- ahuffman.scan_sudoers
+   roles: 
+   - ahuffman.scan_sudoers
+   become: yes
 
 

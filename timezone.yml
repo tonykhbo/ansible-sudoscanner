@@ -1,7 +1,12 @@
 ---
  - hosts: all
+   vars: 
+    ansible_host: "{{ vm_ip }}"
+    timezone: America/New_York
+   vars_files:
+   - vars.yaml
    roles: 
    - yatesr.timezone
-  
-   vars:
-    timezone: America/New_York
+   become: yes
+
+    
