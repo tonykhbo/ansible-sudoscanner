@@ -1,5 +1,7 @@
 ---
  - hosts: all
+   vars: 
+    ansible_host: {{ vm_ip }}
    vars_files:
    - vars.yaml
    roles: 
